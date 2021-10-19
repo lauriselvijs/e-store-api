@@ -10,7 +10,7 @@ class Database
     private $host = $_SERVER['HOST'];
     private $db_name = $_SERVER['DB_NAME'];
     private $username = $_SERVER['USERNAME'];
-    private $password = _SERVER['PASSWORD'];
+    private $password = $_SERVER['PASSWORD'];
     private $conn;
 
     // DB Connect
