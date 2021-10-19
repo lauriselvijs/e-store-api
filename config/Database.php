@@ -4,14 +4,24 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, "config.env");
 $dotenv->safeLoad();
 
+
 class Database
 {
     // DB Params
-    private $host = $_SERVER['HOST'];
-    private $db_name = $_SERVER['DB_NAME'];
-    private $username = $_SERVER['USERNAME'];
-    private $password = $_SERVER['PASSWORD'];
+    private $host;
+    private $db_name;
+    private $username;
+    private $password;
     private $conn;
+
+
+    public function __construct()
+    {
+        $this->host = $_SERVER['HOST'];
+        $this->db_name = $_SERVER['DB_NAME'];
+        $this->username = $_SERVER['USERNAME'];
+        $this->password = $_SERVER['PASSWORD'];
+    }
 
     // DB Connect
     public function connect()
