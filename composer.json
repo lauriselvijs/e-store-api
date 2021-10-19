@@ -1,0 +1,15 @@
+{
+  "name": "work/web-shop",
+  "authors": [
+    {
+      "name": "lauriselvijs",
+      "email": "lauriselvijsm@gmail.com"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.3"
+  },
+  "config": {
+    "vendor-dir": "vendor"
+  }
+}

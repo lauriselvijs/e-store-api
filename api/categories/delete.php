@@ -23,7 +23,7 @@ $data = json_decode(file_get_contents('php://input'));
 $category->id = $data->id;
 
 // Create category
-if ($product->delete()) {
+if ($category->delete()) {
     echo json_encode(
         array('message' => 'Category Deleted')
     );

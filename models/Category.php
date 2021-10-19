@@ -99,8 +99,8 @@ class Category
     {
         // Create query
         $query = 'UPDATE ' . $this->table . '
-        SET
-            name = :name,
+        SET 
+            name = :name
         WHERE id = :id';
 
         // Prepare statement
